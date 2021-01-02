@@ -17,9 +17,12 @@ OBJCOPY_BIN :=
 
 # Every subdirectory with source files must be described here
 SUBDIRS := \
-FreeRTOS/Source \
-FreeRTOS/Source/portable/GCC/ARM_CM4F \
-FreeRTOS/Source/portable/MemMang \
+FreeRTOS/org/Source \
+FreeRTOS/org/Source/portable/GCC/ARM_CM4F \
+FreeRTOS/org/Source/portable/MemMang \
+SEGGER/Config \
+SEGGER/OS \
+SEGGER/SEGGER \
 StdPeriph_Driver/src \
 src \
 startup \
