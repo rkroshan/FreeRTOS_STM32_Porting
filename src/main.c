@@ -38,6 +38,8 @@ uint8_t isUartfree = 1;
 
 int main(void)
 {
+
+	DWT->CTRL |= (1 << 0); //required by SEGGER to maintain timestamp information it enable to store cycle count information
 	//By default the system clk is running at max speed which 168Mhz
 	//this is done by setsysclk function
 	//if it is not required then deinit the clk config and set it to desired value using functions provided in stm32f4xx_rcc.c
@@ -51,6 +53,11 @@ int main(void)
 	//init the LED GPIO
 	Init_GPIO_LED();
 	Init_UART();
+
+	//start SEGGER recording
+	SEGGER_SYSVIEW_Conf();
+	SEGGER_SYSVIEW_Start();
+
 
 	//create  task
 	xTaskCreate(vTask1_Handler, "Led_1", configMINIMAL_STACK_SIZE, NULL, TASK1_PRIORITY, &xTask1_Handle);

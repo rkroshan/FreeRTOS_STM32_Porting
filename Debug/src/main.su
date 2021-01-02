@@ -1,8 +1,8 @@
 main.c:39:5:main	16	static
-main.c:68:6:vTask1_Handler	16	static,ignoring_inline_asm
-main.c:83:6:vTask2_Handler	16	static,ignoring_inline_asm
-main.c:99:6:vTask3_Handler	16	static,ignoring_inline_asm
-main.c:115:6:vTask4_Handler	16	static,ignoring_inline_asm
-main.c:132:6:Init_GPIO_LED	16	static
-main.c:153:6:Init_UART	32	static
-main.c:190:6:printmsg	24	static
+main.c:75:6:vTask1_Handler	16	static,ignoring_inline_asm
+main.c:90:6:vTask2_Handler	16	static,ignoring_inline_asm
+main.c:106:6:vTask3_Handler	16	static,ignoring_inline_asm
+main.c:122:6:vTask4_Handler	16	static,ignoring_inline_asm
+main.c:139:6:Init_GPIO_LED	16	static
+main.c:160:6:Init_UART	32	static
+main.c:197:6:printmsg	24	static

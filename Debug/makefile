@@ -11,9 +11,12 @@ RM := rm -rf
 -include startup/subdir.mk
 -include src/subdir.mk
 -include StdPeriph_Driver/src/subdir.mk
--include FreeRTOS/Source/portable/MemMang/subdir.mk
--include FreeRTOS/Source/portable/GCC/ARM_CM4F/subdir.mk
--include FreeRTOS/Source/subdir.mk
+-include SEGGER/SEGGER/subdir.mk
+-include SEGGER/OS/subdir.mk
+-include SEGGER/Config/subdir.mk
+-include FreeRTOS/org/Source/portable/MemMang/subdir.mk
+-include FreeRTOS/org/Source/portable/GCC/ARM_CM4F/subdir.mk
+-include FreeRTOS/org/Source/subdir.mk
 -include subdir.mk
 -include objects.mk
 
